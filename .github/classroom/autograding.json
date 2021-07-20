@@ -3,7 +3,7 @@
     {
       "name": "Tests",
       "setup": "",
-      "run": "python -m unittest discover -v -s ./test",
+      "run": "python -m unittest discover -v -s ./tests",
       "input": "",
       "output": "",
       "comparison": "included",
