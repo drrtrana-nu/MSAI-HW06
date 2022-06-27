@@ -1,6 +1,6 @@
 ## Homework Instructions
-MBAI 401 Tech Onramp<br>
-Suggested completion date: 08/26/21
+MSAI 305 Intensive Program Design<br>
+Suggested completion date: 07/27/22
 
 Test Instructions
 ---
@@ -11,6 +11,9 @@ Test Instructions
   the tests for all the problems and provide useful information.
   
 Homework Instructions
+---
+
+Problem 1
 ---
 1. In the `city_data` package, create a file named `city.py`.
 2. In that file, create a class named `City` with the following:
@@ -56,9 +59,39 @@ Homework Instructions
     - A method named `display_all_city_stats` that consumes a string that represents the name of one of the attributes
     from the `City` class. The method should sort cities based on the attribute. To do this, you may find the attrgetter
     function from the operator module (imported above) helpful (https://docs.python.org/3/library/operator.html#operator.attrgetter)
-    The function should then print out all the values in the sorted cities list.
+    The function should then print out all the values in the sorted cities list. You may also find this resource on
+    using a lambda to sort a list helpful (https://docs.python.org/3/howto/sorting.html).
         - Uncomment and run the `test_display_all_city_stats_by_name` and `test_display_all_city_stats_by_infected` 
           tests.
         
-**Note: Remember to leverage built-in abstractions (i.e. existing functions) for some of the heavy lifting in these methods!**
-      
+Problem 2
+---
+1. For this exercise, we want you to create a generic superclass and at least three subclasses of that superclass 
+   in the `inheritance` package.
+2. Each class (both superclass and subclass) should have at least two attributes (instance variables). 
+3. Each of the subclasses should have getters (and setters if appropriate - think about this!) - encapsulation! 
+4. The superclass and subclasses should have `__eq__` and `__str__` methods. Think about how you can leverage the 
+   superclass methods in the subclasses.
+5. All subclasses should call the superclass `__init__` method.
+6. Create a file named `inheritance_main.py` file in the `inheritance` package and illustrate the usage of your
+   three classes.
+
+As an example, here is the description of a generic Shoe class and some specific subclasses with attributes that they 
+might have:
+```
+class Shoe:
+# Attributes: self.color, self.brand
+
+class Converse(Shoe): # Inherits from Shoe
+# Attributes: self.lowOrHighTop, self.tongueColor, self.brand = "Converse"
+
+class CombatBoot(Shoe): # Inherits from Shoe
+# Attributes: self.militaryBranch, self.DesertOrJungle
+
+class Sandal(Shoe): # Inherits from Shoe
+# Attributes: self.openOrClosedToe, self.waterproof
+```
+You can use any real-world object except a shoe for this problem :)
+
+For extra credit, create a file named `test_inheritance.py` in the `tests` directory and write at least 5 tests that 
+test one of your subclasses!
