@@ -1,6 +1,6 @@
 ## Homework Instructions
 MSAI 305 Intensive Program Design<br>
-Suggested completion date: 07/27/22
+Suggested completion date: 07/28/23
 
 Test Instructions
 ---
